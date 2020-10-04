@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <script>
+        function cal(){
+            var a=Number(document.getElementById("w").value);
+            var x=Number(document.getElementById("f").value);
+            var y=Number(document.getElementById("i").value);
+            var inch=(x*12)+y;
+            var b= inch*0.0254;
+           var c=a/(b*b);
+            document.getElementById("res").value=c;
+            if(c>=30)
+            {
+                alert("You Are Obese");
+            }
+            else if(c>=25 && c<30)
+            {
+                alert("you are overweight");
+            }
+            else if(c<=18.5)
+            {
+                alert("you are underweight");
+            }
+            }
+            
+
+        </script>
+    </head>
+  <body bgcolor=azure>
+    <h1><i> <font color="green"> Calculate BMI</font></i></h1>
+        Enter weight in kg -> <input id="w"><br><hr>
+        Enter height feet -> <input id="f"><br><hr>
+        inch-><input id="i"><br /><hr>
+       <div align="center"> <button name="bmi" onclick="cal()">Calculate BMI</button></div><br>
+        Your BMI-><input id="res">
+        <br><br>
+        
+    </body>
+</html>
