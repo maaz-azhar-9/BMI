@@ -12,7 +12,15 @@
             var b= inch*0.0254;
            var c=a/(b*b);
             document.getElementById("res").value=c;
-            if(c>=30)
+            if(c>=3000)
+            {
+                alert("Please give valid input,you seems not to exist.");
+            }
+            if(c>=300)
+            {
+                alert("You seems to be one of the heaviest person exist on earth");
+            }
+            else if(c>=30)
             {
                 alert("You Are Obese");
             }
@@ -30,7 +38,8 @@
         </script>
     </head>
   <body bgcolor=azure>
-    <h1><i> <font color="green"> Calculate BMI</font></i></h1>
+    <h1><i> <font color="green">Welcome to our BMI Calculator.</font></i></h1>
+      <h3>Please Calculate Your BMI here.</h3>
         Enter weight in kg -> <input id="w"><br><hr>
         Enter height feet -> <input id="f"><br><hr>
         inch-><input id="i"><br /><hr>
